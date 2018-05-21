@@ -11,11 +11,7 @@ Feature: An agent or representative of someone who pays for care directly
 
     And I enter my name as "name"
 
-    Then I choose the "Continue" option
-
     And I choose the "Yes" option
-
-    Then I choose the "Continue" option
 
     And I enter my address as
       | Field          | Value           |
@@ -27,8 +23,6 @@ Feature: An agent or representative of someone who pays for care directly
 
     And I enter my phone number as 12345
 
-    Then I choose the "Continue" option
-
     And I choose the "No" option for email
 
     And I choose the "No" option for UTR
@@ -37,11 +31,7 @@ Feature: An agent or representative of someone who pays for care directly
 
     Then I enter my name as "name"
 
-    And I choose the "Continue" option
-
     Then I choose the "Yes" option
-
-    And I choose the "Continue" option
 
     And I enter my address as
       | Field          | Value           |
@@ -53,11 +43,7 @@ Feature: An agent or representative of someone who pays for care directly
 
     Then I enter my phone number as 12345
 
-    And I choose the "Continue" option
-
     And I choose the "No" option for email
-
-    And I choose the "Continue" option
 
     And I will be shown my answers
       | Label                           | Answer                             |
