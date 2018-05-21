@@ -30,6 +30,11 @@ class StepDefinitions extends ScalaDsl with EN with Matchers with Browser {
     click on id("submit")
   }
 
+  When ("""^I choose the "An agent or representative of a company that employs social care workers" option$"""){() =>
+    click on id("capacityRegistering.companyAgent")
+    click on id("submit")
+  }
+
   And("""^I enter my name as "(.+)"$"""){name: String =>
     webDriver.findElement(By.id("value")).sendKeys(name)
     webDriver.findElement(By.id("submit")).click()
