@@ -20,6 +20,11 @@ class StepDefinitions extends ScalaDsl with EN with Matchers with Browser {
     click on id("submit")
   }
 
+  When ("""^I choose the "An agent or representative of someone who pays for care directly" option$"""){() =>
+    click on id("capacityRegistering.personalBudgetHolderAgent")
+    click on id("submit")
+  }
+
   And("""^I enter my name as "(.+)"$"""){name: String =>
     webDriver.findElement(By.id("value")).sendKeys(name)
     webDriver.findElement(By.id("submit")).click()
@@ -34,6 +39,10 @@ class StepDefinitions extends ScalaDsl with EN with Matchers with Browser {
 
   And("""^I choose the "Yes" option$"""){() =>
     click on id("value-yes")
+    click on id("submit")
+  }
+
+  And("""^I choose the "Continue" option$"""){() =>
     click on id("submit")
   }
 
